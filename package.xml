@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>tf_ros_detection</name>
+  <version>1.3.0</version>
+  <description>A test package for checking if tensorflow_ros_cpp works correctly.</description>
+
+  <maintainer email="parwanahardik@gmail.com">Hardik Parwana</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>cv_bridge</build_depend>
+  <build_depend>image_transport</build_depend>
+  <build_depend>roscpp</build_depend> 
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend> 
+  <build_depend>std_srvs</build_depend> 
+  <build_depend>sensor_msgs</build_depend> 
+  <build_depend>ffmpeg</build_depend>
+  <build_depend>message_generation</build_depend>
+  <build_export_depend>rospy</build_export_depend>
+<build_depend>pcl_conversions</build_depend>
+<exec_depend>pcl_conversions</exec_depend>
+
+<build_depend>pcl_ros</build_depend>
+<exec_depend>pcl_ros</exec_depend>
+
+<build_depend>tf</build_depend>
+<exec_depend>tf</exec_depend>
+  
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>image_transport</exec_depend> 
+  <exec_depend>roscpp</exec_depend> 
+  <exec_depend>std_msgs</exec_depend> 
+  <exec_depend>std_srvs</exec_depend> 
+  <exec_depend>sensor_msgs</exec_depend> 
+  <exec_depend>ffmpeg</exec_depend>  
+  <exec_depend>v4l-utils</exec_depend>
+  <exec_depend>message_runtime</exec_depend>
+  
+  <build_depend>roslib</build_depend>
+  <build_depend>tensorflow_ros_cpp</build_depend>
+  <exec_depend>tensorflow_ros_cpp</exec_depend>
+  <exec_depend>roslib</exec_depend>
+  <exec_depend>rospy</exec_depend>
+
+  <test_depend>rosunit</test_depend>
+</package>

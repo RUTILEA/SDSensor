@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  
+    <node name="led"	pkg="tf_ros_detection"      type="led"  	respawn="true" 	output="screen" launch-prefix="sudo"><!-- launch-prefix="xterm -e gdb !args"-->
+    </node>
+
+</launch>

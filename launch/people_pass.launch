@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+   
+    <node name="people_detect_pass"	pkg="tf_ros_detection"      type="people_detect_pass"  	respawn="true" 	output="screen"><!-- launch-prefix="xterm -e gdb !args"-->
+                <remap from="cam_in" 			to="/stereo_cam_node/image_raw"/>
+		<param name="labels_dir"	type="string" 	value="/mscoco_label_map2.pbtxt" /> 
+		<param name="models_dir"	type="string" 	value="/home/ubuntu/Downloads/coco_mobile/detect_int.tflite" />
+		<!-- /home/ubuntu/Downloads/coco_mobile/detect.tflite , /home/ubuntu/Downloads/facenet_keras.tflite  , /home/ubuntu/Downloads/62faces_float.tflite -->
+ 		<param name="threshold_Score" value="0.1" />
+ 		<param name="threshold_IOU" value="0.4" />
+ 		<param name="type" value="1" /> <!--default=1,int=1,float=2 -->
+     </node>
+
+</launch>

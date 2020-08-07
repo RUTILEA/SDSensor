@@ -1,0 +1,4 @@
+<launch>
+     <node name="stereo_img_server"	pkg="tf_ros_detection"      type="stereo_img_server"  	respawn="true" 	output="screen">
+     </node>
+</launch>

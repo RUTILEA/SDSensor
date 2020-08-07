@@ -1,0 +1,67 @@
+SEGMENTATIOn MODEL
+3.6.9 (default, Apr 18 2020, 01:56:04) 
+[GCC 8.4.0]
+loaded model
+[{'name': 'sub_7', 'index': 183, 'shape': array([  1, 257, 257,   3], dtype=int32), 'dtype': <class 'numpy.float32'>, 'quantization': (0.0, 0), 'quantization_parameters': {'scales': array([], dtype=float32), 'zero_points': array([], dtype=int32), 'quantized_dimension': 0}}]
+[{'name': 'ResizeBilinear_3', 'index': 168, 'shape': array([  1, 257, 257,  21], dtype=int32), 'dtype': <class 'numpy.float32'>, 'quantization': (0.0, 0), 'quantization_parameters': {'scales': array([], dtype=float32), 'zero_points': array([], dtype=int32), 'quantized_dimension': 0}}]
+{'name': 'ResizeBilinear_3', 'index': 168, 'shape': array([  1, 257, 257,  21], dtype=int32), 'dtype': <class 'numpy.float32'>, 'quantization': (0.0, 0), 'quantization_parameters': {'scales': array([], dtype=float32), 'zero_points': array([], dtype=int32), 'quantized_dimension': 0}}
+start
+done
+input details
+[{'name': 'sub_7', 'index': 183, 'shape': array([  1, 257, 257,   3], dtype=int32), 'dtype': <class 'numpy.float32'>, 'quantization': (0.0, 0), 'quantization_parameters': {'scales': array([], dtype=float32), 'zero_points': array([], dtype=int32), 'quantized_dimension': 0}}]
+{'name': 'sub_7', 'index': 183, 'shape': array([  1, 257, 257,   3], dtype=int32), 'dtype': <class 'numpy.float32'>, 'quantization': (0.0, 0), 'quantization_parameters': {'scales': array([], dtype=float32), 'zero_points': array([], dtype=int32), 'quantized_dimension': 0}}
+183
+0.216200590133667
+get tensor
+interpreter
+<class 'tflite_runtime.interpreter.Interpreter'>
+[[ 13.75126648  13.90333939  14.06093216 ...,  13.9817152   14.04210091
+   14.10037136]
+ [ 13.80868912  13.95395947  14.10450459 ...,  13.85666847  13.90406513
+   13.94980335]
+ [ 13.86610985  14.00458145  14.14807701 ...,  13.73162365  13.76603127
+   13.79923534]
+ ..., 
+ [ 15.21801376  15.15643978  15.09263134 ...,  14.82603741  14.86170483
+   14.89612389]
+ [ 15.13825989  15.07486248  15.00916386 ...,  14.79495144  14.84588718
+   14.89503765]
+ [ 15.05850697  14.99328423  14.92569637 ...,  14.76386833  14.83006763
+   14.89395237]]
+26.5296
+11.6855
+
+DETECTION MODEL
+3.6.9 (default, Apr 18 2020, 01:56:04) 
+[GCC 8.4.0]
+loaded model
+[{'name': 'sub_7', 'index': 183, 'shape': array([  1, 257, 257,   3], dtype=int32), 'dtype': <class 'numpy.float32'>, 'quantization': (0.0, 0), 'quantization_parameters': {'scales': array([], dtype=float32), 'zero_points': array([], dtype=int32), 'quantized_dimension': 0}}]
+[{'name': 'ResizeBilinear_3', 'index': 168, 'shape': array([  1, 257, 257,  21], dtype=int32), 'dtype': <class 'numpy.float32'>, 'quantization': (0.0, 0), 'quantization_parameters': {'scales': array([], dtype=float32), 'zero_points': array([], dtype=int32), 'quantized_dimension': 0}}]
+{'name': 'ResizeBilinear_3', 'index': 168, 'shape': array([  1, 257, 257,  21], dtype=int32), 'dtype': <class 'numpy.float32'>, 'quantization': (0.0, 0), 'quantization_parameters': {'scales': array([], dtype=float32), 'zero_points': array([], dtype=int32), 'quantized_dimension': 0}}
+start
+done
+floating number!!!!
+input details
+[{'name': 'sub_7', 'index': 183, 'shape': array([  1, 257, 257,   3], dtype=int32), 'dtype': <class 'numpy.float32'>, 'quantization': (0.0, 0), 'quantization_parameters': {'scales': array([], dtype=float32), 'zero_points': array([], dtype=int32), 'quantized_dimension': 0}}]
+{'name': 'sub_7', 'index': 183, 'shape': array([  1, 257, 257,   3], dtype=int32), 'dtype': <class 'numpy.float32'>, 'quantization': (0.0, 0), 'quantization_parameters': {'scales': array([], dtype=float32), 'zero_points': array([], dtype=int32), 'quantized_dimension': 0}}
+183
+0.21517252922058105
+get tensor
+interpreter
+<class 'tflite_runtime.interpreter.Interpreter'>
+[[ 13.75126648  13.90333939  14.06093216 ...,  13.9817152   14.04210091
+   14.10037136]
+ [ 13.80868912  13.95395947  14.10450459 ...,  13.85666847  13.90406513
+   13.94980335]
+ [ 13.86610985  14.00458145  14.14807701 ...,  13.73162365  13.76603127
+   13.79923534]
+ ..., 
+ [ 15.21801376  15.15643978  15.09263134 ...,  14.82603741  14.86170483
+   14.89612389]
+ [ 15.13825989  15.07486248  15.00916386 ...,  14.79495144  14.84588718
+   14.89503765]
+ [ 15.05850697  14.99328423  14.92569637 ...,  14.76386833  14.83006763
+   14.89395237]]
+26.5296
+11.6855
+

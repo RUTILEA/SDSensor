@@ -1,0 +1,2 @@
+sensor_msgs/RegionOfInterest roi
+std_msgs/UInt8 score

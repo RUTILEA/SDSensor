@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+  
+    <node name="tf_detect_realsense_node"	pkg="tf_ros_detection"      type="tf_detect_realsense_node"  	respawn="true" 	output="screen">
+                <remap from="cam_in" 			to="/camera/color/image_raw"/>
+		<remap from="depth_in" 			to="/camera/depth/image_rect_raw"/>
+		<param name="root_dir"	type="string" 	value="/home/ubuntu/Downloads/"   />
+		<param name="labels_dir"	type="string" 	value="/ssdlite_mobilenet_v2_coco_2018_05_09/mscoco_label_map2.pbtxt"/> <!--"face.pbtxt" /--> 
+		<param name="models_dir"	type="string" 	value="/ssdlite_mobilenet_v2_coco_2018_05_09/frozen_inference_graph.pb" /> <!--/frozen_inference_graph_face.pb -->
+ 		<param name="threshold_Score" value="0.5" />
+ 		<param name="threshold_IOU" value="0.8" />
+     </node>
+
+</launch>

@@ -1,0 +1,22 @@
+<launch>
+
+   <node name="usb_cam" pkg="usb_cam" type="usb_cam_node" output="screen" >
+	    <param name="video_device" value="/dev/video0" />
+	    <param name="image_width" value="640" />
+	    <param name="image_height" value="480" />
+	    <param name="pixel_format" value="yuyv" />
+	    <param name="camera_frame_id" value="usb_cam" />
+	    <param name="io_method" value="mmap"/>
+  </node>
+
+
+    <node name="tf_object_detection_node"	pkg="tf_ros_detection"      type="tf_object_detection_node"  	respawn="true" 	output="screen">
+                <remap from="cam_in" 			to="/usb_cam/image_raw"/>
+		<param name="root_dir"	type="string" 	value="/home/interface/softwares/tensorflow_models/"   />
+		<param name="labels_dir"	type="string" 	value="/mscoco_label_map2.pbtxt" /> 
+		<param name="models_dir"	type="string" 	value="/ssd_inception_v2_coco_11_06_2017/frozen_inference_graph.pb" />
+ 		<param name="threshold_Score" value="0.7" />
+ 		<param name="threshold_IOU" value="0.8" />
+     </node>
+
+</launch>

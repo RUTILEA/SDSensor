@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+   <node name="coral_test_detect"	pkg="tf_ros_detection"      type="coral_test_detect"  	respawn="true" 	output="screen"><!-- launch-prefix="xterm -e gdb !args"-->
+                <remap from="cam_in" 			to="/stereo_cam_node/image_raw"/>
+		<param name="labels_dir"	type="string" 	value="/mscoco_label_map2.pbtxt" /> 
+		<param name="pose_dir"	type="string" 	value="/home/ubuntu/catkin_p3/src/test_p3/src/models/mobilenet/posenet_mobilenet_v1_075_481_641_quant_decoder_edgetpu.tflite" />
+		<param name="ssd_path"	type="string" 	value="/home/ubuntu/Downloads/coco_mobile/detect_int_200_200_edgetpu.tflite"/>
+		<!-- /home/ubuntu/Downloads/coco_mobile/detect.tflite , /home/ubuntu/Downloads/facenet_keras.tflite  , /home/ubuntu/Downloads/62faces_float.tflite /home/ubuntu/codes/ssd_mobilenet_v2_coco_quant_postprocess_edgetpu.tflite -->
+ 		<param name="threshold_Score" value="0.1" />
+ 		<param name="threshold_IOU" value="0.4" />
+ 		<param name="top_k" value="200" />
+ 		<param name="use_image" value="1" />
+ 		<param name="image_path" value="/home/ubuntu/Downloads/i4.jpeg" />
+     </node>
+     
+</launch>
